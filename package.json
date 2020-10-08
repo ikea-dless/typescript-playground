@@ -1,0 +1,16 @@
+{
+  "name": "typescript-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "3.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "MIT"
+}
