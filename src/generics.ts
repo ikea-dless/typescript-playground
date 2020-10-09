@@ -30,19 +30,3 @@ const sample = (values) => {
 
 sample([1,2,3])
 sample(["a", "b", "c"])
-
-// advanced
-//
-// オブジェクトから特定のプロパティの値を1つ抜き出す関数をgenericsを浸かって書いてください
-
-const getValue = (obj, key) => {
-  return obj[key]
-}
-
-getValue({ hoge: "hoge", fuga: 123 }, "hoge")
-// ↓存在しないプロパティなので、エラーになることを期待している
-getValue({ hoge: "hoge", fuga: 123 }, "piyo")
-
-// ヒント
-// keyofという構文を使うと、オブジェクトのキーがunion typeで取れます
-type KeyOfType = keyof {hoge: string, fuga: string}
